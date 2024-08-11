@@ -1,8 +1,5 @@
-import asyncio
 import logging
 from aiohttp import web
-from api_v1.routes import setup_routes
-from api_v1.src.scheduler import Scheduler
 from api_v1.main import init_app
 
 logging.basicConfig(level=logging.INFO)
