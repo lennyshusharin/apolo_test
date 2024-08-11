@@ -1,0 +1,8 @@
+import pytest
+from aiohttp import web
+from api_v1.main import init_app
+
+@pytest.fixture
+async def client(aiohttp_client):
+    app = await init_app()
+    return await aiohttp_client(app)
